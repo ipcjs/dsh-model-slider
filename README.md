@@ -8,6 +8,12 @@ A DSH Web UI model-seat plugin: **3-level quick-switch slider** (low/medium/high
 
 ---
 
+## 截图 / Screenshot
+
+![dsh-model-slider 界面截图 / UI screenshot](assets/screenshot.png)
+
+---
+
 ## 功能特性 / Features
 
 - 🎚️ **三档快切滑块**：点击模型名弹出面板，顶部是低/中/高三档滑块。每档的模型和推理等级在配置文件中预置，单击即直接切换（面板保持打开，可立即看到新模型与用量）。
