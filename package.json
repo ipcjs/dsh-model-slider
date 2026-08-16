@@ -1,0 +1,35 @@
+{
+  "name": "dsh-model-slider",
+  "version": "0.1.0",
+  "description": "DSH Web UI model seat: 3-level quick slider (low/medium/high, each preconfigured with model + reasoning effort), advanced model/effort picker, modality icons, and per-provider usage/balance display. DSH 模型选择器增强：低中高三档快切滑块 + 高级选择 + 模态图标 + 供应商用量显示。",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "plugin": true,
+    "kind": "server",
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-model-selection"
+      ]
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ipcjs/dsh-model-slider.git"
+  },
+  "license": "MIT"
+}

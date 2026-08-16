@@ -1,0 +1,5 @@
+# Model Slider: composer model seat with a 3-level quick slider, an advanced
+# picker, and per-provider usage/balance display.
+- insert:
+    - id: msld
+      name: 'dsh-model-slider'
